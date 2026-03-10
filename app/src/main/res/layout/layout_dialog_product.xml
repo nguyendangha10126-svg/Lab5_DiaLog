@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Sản Phẩm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edtDialogName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên sản phẩm (Laptop, Quần áo...)"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtDialogCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Danh mục"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtDialogPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Giá bán (VNĐ)"
+        android:inputType="number"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:backgroundTint="#95A5A6"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu Hàng"
+            android:backgroundTint="#2C3E50"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
